@@ -85,7 +85,6 @@ export default {
       obj[item] = id
       this.$store.dispatch('filterItems', obj)
       Object.keys(this.filters).forEach((fil, idx) => {
-        console.log(fil)
         if (fil != item && this.filters[fil] > this.filters[item]) {
           this[fil] = null;
         }
